@@ -29,7 +29,7 @@ twitter: bartkevelham
 # postcode: EH3 5BL
 city: Geneva
 country: Switzerland
-# google_analytics: UA-69300817-1
+google_analytics: UA-4041396-6
 
 # needed for travis-ci build
 exclude: [vendor]
