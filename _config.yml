@@ -1,21 +1,35 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+highlighter: pygments
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+permalink: /:title.html
+paginate: 5
+gems: [jekyll-paginate]
+port: 4000
+safe: true
+url: http://biomadeira.github.io/vitae
+author: Fábio Madeira
 
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# edit this section with your information
+# biomadeira.github.io - all contents run on /vitae/
+# for a normal use at the base of the server change it to "/"
+baseurl: /
+title: Bart Kevelham's Resume
+name: Bart Kevelham
+email: bartkevelham@gmail.com	
+email_full: mailto:bartkevelham@gmail.com
+website: bart.kevelham.com
+website_full: http://bart.kevelham.com
+github: bkevelham
+twitter: bartkevelham
+# tel: +44 0000 000000
+# tel_full: tel:+440000000000
+# google_maps: 'https://www.google.co.uk/maps/place/44+Perth+St,+Edinburgh,+Edinburgh+City+EH3+5BL'
+# address: 44 Perth Street
+# postcode: EH3 5BL
+city: Geneva
+country: Switzerland
+# google_analytics: UA-69300817-1
 
-# Build settings
-markdown: kramdown
+# needed for travis-ci build
+exclude: [vendor]
